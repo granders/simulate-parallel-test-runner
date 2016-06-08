@@ -1,0 +1,238 @@
+[
+    {
+        "name": "Module: muckrake.tests.schema_registry_benchmark_test Class:  SchemaRegistryBenchmark Method: test",
+        "run_time_seconds": 146,
+        "nodes": 5
+    },
+    {
+        "name": "Module: muckrake.tests.mini_test Class:  MiniTest Method: test",
+        "run_time_seconds": 14,
+        "nodes": 2
+    },
+    {
+        "name": "Module: muckrake.tests.everything_runs_test Class:  EverythingRunsTest Method: test",
+        "run_time_seconds": 41,
+        "nodes": 6
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_distributed_test Class:  ConnectHdfsDistributedTest Method: test_bounce",
+        "run_time_seconds": 1210,
+        "nodes": 10
+    },
+    {
+        "name": "Module: muckrake.tests.elasticsearch_test Class:  ElasticsearchTest Method: test_elasticsearch",
+        "run_time_seconds": 23,
+        "nodes": 2
+    },
+    {
+        "name": "Module: muckrake.tests.sr_kafka_broker_failover_test Class:  KafkaBrokerCleanBounce Method: test",
+        "run_time_seconds": 166,
+        "nodes": 4
+    },
+    {
+        "name": "Module: muckrake.tests.sr_kafka_broker_failover_test Class:  KafkaBrokerHardBounce Method: test",
+        "run_time_seconds": 183,
+        "nodes": 4
+    },
+    {
+        "name": "Module: muckrake.tests.sr_kafka_broker_failover_test Class:  KafkaLeaderCleanFailover Method: test",
+        "run_time_seconds": 91,
+        "nodes": 4
+    },
+    {
+        "name": "Module: muckrake.tests.sr_kafka_broker_failover_test Class:  KafkaLeaderHardFailover Method: test",
+        "run_time_seconds": 102,
+        "nodes": 4
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_test Class:  ConnectHiveTest Method: test_hive",
+        "run_time_seconds": 227,
+        "nodes": 9
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_test Class:  ConnectHdfsTest Method: test_avro",
+        "run_time_seconds": 220,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_test Class:  ConnectHdfsTest Method: test_field_partitioning",
+        "run_time_seconds": 272,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_test Class:  ConnectHdfsTest Method: test_parquet",
+        "run_time_seconds": 205,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_test Class:  ConnectHdfsTest Method: test_schema_migration_backward_compatibility",
+        "run_time_seconds": 216,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_test Class:  ConnectHdfsTest Method: test_schema_migration_no_compatibility",
+        "run_time_seconds": 257,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_hdfs_test Class:  ConnectHdfsTest Method: test_time_partitioning",
+        "run_time_seconds": 254,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.mysql_test Class:  MysqlTest Method: test",
+        "run_time_seconds": 11,
+        "nodes": 2
+    },
+    {
+        "name": "Module: muckrake.tests.native_vs_rest_performance_test Class:  NativeVsRestProducerPerformance Method: test",
+        "run_time_seconds": 49,
+        "nodes": 5
+    },
+    {
+        "name": "Module: muckrake.tests.native_vs_rest_performance_test Class:  NativeVsRestConsumerPerformance Method: test",
+        "run_time_seconds": 64,
+        "nodes": 5
+    },
+    {
+        "name": "Module: muckrake.tests.sr_master_failover_test Class:  MasterHardFailover Method: test",
+        "run_time_seconds": 91,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.sr_master_failover_test Class:  HardBounce Method: test",
+        "run_time_seconds": 135,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.sr_master_failover_test Class:  CleanBounce Method: test",
+        "run_time_seconds": 165,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.sr_master_failover_test Class:  MasterCleanFailover Method: test",
+        "run_time_seconds": 64,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.hadoop_test Class:  HDPSecureSetupTest Method: test",
+        "run_time_seconds": 133,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.hadoop_test Class:  HDPSetupTest Method: test",
+        "run_time_seconds": 119,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.hadoop_test Class:  HadoopV2SetupTest Method: test",
+        "run_time_seconds": 120,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.hadoop_test Class:  HadoopV2SecureSetupTest Method: test",
+        "run_time_seconds": 142,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.hadoop_test Class:  HadoopV1SetupTest Method: test",
+        "run_time_seconds": 91,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.test_reassign_partitions Class:  TestReassignPartitions Method: test",
+        "run_time_seconds": 82,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_distributed_test Class:  ConnectDistributedMysqlTest Method: test_bounce Arguments: {   \"clean\": false }",
+        "run_time_seconds": 370,
+        "nodes": 8
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_distributed_test Class:  ConnectDistributedMysqlTest Method: test_bounce Arguments: {   \"clean\": true }",
+        "run_time_seconds": 237,
+        "nodes": 8
+    },
+    {
+        "name": "Module: muckrake.tests.camus_test Class:  CamusHDPTest Method: test",
+        "run_time_seconds": 160,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.camus_test Class:  CamusHadoopV1Test Method: test",
+        "run_time_seconds": 136,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.camus_test Class:  CamusHadoopV2Test Method: test",
+        "run_time_seconds": 160,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.control_center_test Class:  ControlCenterTest Method: test_control_center",
+        "run_time_seconds": 164,
+        "nodes": 6
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_test Class:  ConnectMysqlTest Method: test_convert_types",
+        "run_time_seconds": 63,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_test Class:  ConnectMysqlTest Method: test_query_modes Arguments: {   \"incremental_mode\": \"timestamp+incrementing\",   \"query_mode\": \"table\" }",
+        "run_time_seconds": 104,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_test Class:  ConnectMysqlTest Method: test_query_modes Arguments: {   \"incremental_mode\": \"timestamp\",   \"query_mode\": \"table\" }",
+        "run_time_seconds": 100,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_test Class:  ConnectMysqlTest Method: test_query_modes Arguments: {   \"incremental_mode\": \"incrementing\",   \"query_mode\": \"table\" }",
+        "run_time_seconds": 101,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_test Class:  ConnectMysqlTest Method: test_query_modes Arguments: {   \"incremental_mode\": \"timestamp+incrementing\",   \"query_mode\": \"query\" }",
+        "run_time_seconds": 106,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_test Class:  ConnectMysqlTest Method: test_query_modes Arguments: {   \"incremental_mode\": \"timestamp\",   \"query_mode\": \"query\" }",
+        "run_time_seconds": 99,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_test Class:  ConnectMysqlTest Method: test_query_modes Arguments: {   \"incremental_mode\": \"incrementing\",   \"query_mode\": \"query\" }",
+        "run_time_seconds": 104,
+        "nodes": 7
+    },
+    {
+        "name": "Module: muckrake.tests.control_center_demo_test Class:  ControlCenterDemoTest Method: test_api_returns",
+        "run_time_seconds": 56,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.control_center_demo_test Class:  ControlCenterDemoTest Method: test_hit_frontend",
+        "run_time_seconds": 41,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.control_center_demo_test Class:  ControlCenterDemoTest Method: test_messages_are_written",
+        "run_time_seconds": 45,
+        "nodes": 3
+    },
+    {
+        "name": "Module: muckrake.tests.connect_mysql_schema_test Class:  ConnectMysqlSchemaTest Method: test_schema_migration",
+        "run_time_seconds": 79,
+        "nodes": 8
+    },
+    {
+        "name": "Module: muckrake.tests.proactive_support_topic_test Class:  ProactiveSupportTopicTest Method: test",
+        "run_time_seconds": 54,
+        "nodes": 3
+    }
+]
+

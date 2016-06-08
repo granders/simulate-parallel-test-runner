@@ -1,0 +1,1002 @@
+[
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_PLAINTEXT.failure_mode=hard_shutdown.broker_type=leader",
+    "run_time_seconds": 159
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_bounce.clean_shutdown=True.bounce_mode=all",
+    "run_time_seconds": 122
+  },
+  {
+    "nodes": 8,
+    "name": "kafkatest.tests.core.zookeeper_security_upgrade_test.ZooKeeperSecurityUpgradeTest.test_zk_security_upgrade.security_protocol=PLAINTEXT",
+    "run_time_seconds": 244
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.streams.streams_bounce_test.StreamsBounceTest.test_bounce",
+    "run_time_seconds": 216
+  },
+  {
+    "nodes": 9,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=True.security_protocol=SASL_PLAINTEXT.new_consumer=True",
+    "run_time_seconds": 170
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.tools.replica_verification_test.ReplicaVerificationToolTest.test_replica_lags",
+    "run_time_seconds": 60
+  },
+  {
+    "nodes": 9,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=False.security_protocol=SASL_SSL.new_consumer=True",
+    "run_time_seconds": 250
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=snappy.acks=1.message_size=1000",
+    "run_time_seconds": 73
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_broker_failure.clean_shutdown=True.enable_autocommit=False",
+    "run_time_seconds": 64
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_consumer_throughput.security_protocol=PLAINTEXT.compression_type=none",
+    "run_time_seconds": 119
+  },
+  {
+    "nodes": 2,
+    "name": "kafkatest.sanity_checks.test_kafka_version.KafkaVersionTest.test_multi_version",
+    "run_time_seconds": 48
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_bounce.clean_shutdown=False.bounce_mode=all",
+    "run_time_seconds": 130
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=None.security_protocol=SASL_SSL.compression_types=.none.new_consumer=True",
+    "run_time_seconds": 215
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_consumer_throughput.security_protocol=SSL.compression_type=snappy",
+    "run_time_seconds": 114
+  },
+  {
+    "nodes": 3,
+    "name": "kafkatest.sanity_checks.test_verifiable_producer.TestVerifiableProducer.test_simple_run.producer_version=0.8.2.2",
+    "run_time_seconds": 29
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_broker_failure.clean_shutdown=False.enable_autocommit=False",
+    "run_time_seconds": 69
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SSL.failure_mode=hard_shutdown.broker_type=leader",
+    "run_time_seconds": 147
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_and_consumer.security_protocol=PLAINTEXT.new_consumer=False",
+    "run_time_seconds": 103
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_failure.clean_shutdown=False.enable_autocommit=False",
+    "run_time_seconds": 81
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_distributed_test.ConnectDistributedTest.test_file_source_and_sink.security_protocol=PLAINTEXT",
+    "run_time_seconds": 76
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=clean_bounce.broker_type=controller",
+    "run_time_seconds": 164
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_and_consumer.security_protocol=PLAINTEXT.compression_type=none",
+    "run_time_seconds": 107
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=True.security_protocol=PLAINTEXT.new_consumer=True",
+    "run_time_seconds": 143
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=none.acks=1.message_size=10000",
+    "run_time_seconds": 80
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=hard_shutdown.broker_type=controller",
+    "run_time_seconds": 176
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.compression_test.CompressionTest.test_compressed_topic.compression_types=.snappy.gzip.lz4.none.new_consumer=False",
+    "run_time_seconds": 109
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_console_consumer.ConsoleConsumerTest.test_lifecycle.sasl_mechanism=PLAIN.security_protocol=SASL_SSL",
+    "run_time_seconds": 50
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=hard_shutdown.broker_type=leader",
+    "run_time_seconds": 168
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=clean_shutdown.broker_type=controller",
+    "run_time_seconds": 160
+  },
+  {
+    "nodes": 10,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_simple_end_to_end.security_protocol=SASL_SSL.new_consumer=True",
+    "run_time_seconds": 156
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SSL.failure_mode=clean_bounce.broker_type=leader",
+    "run_time_seconds": 186
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=SASL_PLAINTEXT.compression_type=none",
+    "run_time_seconds": 142
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.interbroker_security_protocol=PLAINTEXT.security_protocol=SSL",
+    "run_time_seconds": 131
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SASL_SSL.client_protocol=SASL_SSL",
+    "run_time_seconds": 305
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.core.consumer_group_command_test.ConsumerGroupCommandTest.test_list_consumer_groups.security_protocol=PLAINTEXT",
+    "run_time_seconds": 29
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_PLAINTEXT.failure_mode=hard_bounce.broker_type=leader",
+    "run_time_seconds": 230
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SASL_SSL.client_protocol=SASL_PLAINTEXT",
+    "run_time_seconds": 317
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.client.quota_test.QuotaTest.test_quota.consumer_num=1.producer_num=1.producer_id=overridden_id.consumer_id=overridden_id",
+    "run_time_seconds": 362
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=False.offsets_storage=zookeeper.new_consumer=False",
+    "run_time_seconds": 164
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=clean_shutdown.broker_type=leader",
+    "run_time_seconds": 130
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=hard_shutdown.broker_type=controller",
+    "run_time_seconds": 143
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.core.consumer_group_command_test.ConsumerGroupCommandTest.test_describe_consumer_group.security_protocol=PLAINTEXT",
+    "run_time_seconds": 32
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_consumer_throughput.security_protocol=PLAINTEXT.compression_type=snappy",
+    "run_time_seconds": 100
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.consumer_version=0.9.0.1.producer_version=trunk.compression_types=.none.timestamp_type=None",
+    "run_time_seconds": 103
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=none.acks=1.message_size=1000",
+    "run_time_seconds": 80
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=hard_bounce.broker_type=controller",
+    "run_time_seconds": 242
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=0.9.0.1.compression_types=.none",
+    "run_time_seconds": 147
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=none.acks=1.message_size=10",
+    "run_time_seconds": 102
+  },
+  {
+    "nodes": 9,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=False.security_protocol=SASL_PLAINTEXT.new_consumer=True",
+    "run_time_seconds": 244
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.core.consumer_group_command_test.ConsumerGroupCommandTest.test_list_consumer_groups.security_protocol=SSL",
+    "run_time_seconds": 36
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=none.acks=1.message_size=10",
+    "run_time_seconds": 91
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=False.offsets_storage=kafka.new_consumer=False",
+    "run_time_seconds": 164
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=none.acks=1.message_size=10000",
+    "run_time_seconds": 72
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_one.client_protocol=SASL_SSL",
+    "run_time_seconds": 283
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-one.acks=1",
+    "run_time_seconds": 71
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.reassign_partitions_test.ReassignPartitionsTest.test_reassign_partitions.bounce_brokers=False.security_protocol=PLAINTEXT",
+    "run_time_seconds": 141
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.consumer_version=0.9.0.1.producer_version=0.8.2.2.compression_types=.none.timestamp_type=None",
+    "run_time_seconds": 103
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_simple_end_to_end.security_protocol=PLAINTEXT.new_consumer=False",
+    "run_time_seconds": 137
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SASL_PLAINTEXT.client_protocol=SASL_PLAINTEXT",
+    "run_time_seconds": 300
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=snappy.acks=1.message_size=10",
+    "run_time_seconds": 94
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=hard_bounce.broker_type=controller",
+    "run_time_seconds": 193
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=None.compression_types=.lz4",
+    "run_time_seconds": 142
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.sanity_checks.test_console_consumer.ConsoleConsumerTest.test_version",
+    "run_time_seconds": 38
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.connect.connect_distributed_test.ConnectDistributedTest.test_file_source_and_sink.security_protocol=SASL_SSL",
+    "run_time_seconds": 115
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_and_consumer.security_protocol=SSL.compression_type=none",
+    "run_time_seconds": 134
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SASL_PLAINTEXT.client_protocol=SASL_SSL",
+    "run_time_seconds": 324
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_long_term_producer_throughput.security_protocol=SSL.compression_type=snappy",
+    "run_time_seconds": 96
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.reassign_partitions_test.ReassignPartitionsTest.test_reassign_partitions.bounce_brokers=True.security_protocol=PLAINTEXT",
+    "run_time_seconds": 155
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=0.9.0.1.compression_types=.lz4",
+    "run_time_seconds": 145
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.client.message_format_change_test.MessageFormatChangeTest.test_compatibility.consumer_version=0.9.0.1.producer_version=0.9.0.1",
+    "run_time_seconds": 157
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_performance_services.PerformanceServiceTest.test_version.version=0.9.0.1.new_consumer=False",
+    "run_time_seconds": 62
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_simple_end_to_end.security_protocol=PLAINTEXT.new_consumer=True",
+    "run_time_seconds": 128
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=none.acks=1.message_size=1000",
+    "run_time_seconds": 72
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_failure.clean_shutdown=True.enable_autocommit=True",
+    "run_time_seconds": 72
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=None.compression_types=.lz4.new_consumer=True",
+    "run_time_seconds": 146
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.timestamp_type=LogAppendTime.new_consumer=True.producer_version=trunk.compression_types=.snappy.consumer_version=trunk",
+    "run_time_seconds": 107
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=PLAINTEXT.compression_type=none",
+    "run_time_seconds": 123
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_distributed_test.ConnectDistributedTest.test_pause_and_resume_source",
+    "run_time_seconds": 68
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.client_sasl_mechanism=PLAIN.failure_mode=hard_bounce.broker_type=leader.interbroker_sasl_mechanism=PLAIN",
+    "run_time_seconds": 233
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_distributed_test.ConnectDistributedTest.test_bounce.clean=True",
+    "run_time_seconds": 161
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_distributed_test.ConnectDistributedTest.test_pause_state_persistent",
+    "run_time_seconds": 69
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_one.client_protocol=SSL",
+    "run_time_seconds": 266
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.connect.connect_test.ConnectStandaloneFileTest.test_file_source_and_sink.security_protocol=SASL_SSL",
+    "run_time_seconds": 90
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=SASL_SSL.compression_type=snappy",
+    "run_time_seconds": 169
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_simple_end_to_end.security_protocol=SSL.new_consumer=True",
+    "run_time_seconds": 136
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_test.ConnectStandaloneFileTest.test_file_source_and_sink.converter=org.apache.kafka.connect.storage.StringConverter.schemas=None",
+    "run_time_seconds": 63
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=True.offsets_storage=zookeeper.new_consumer=False",
+    "run_time_seconds": 150
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_long_term_producer_throughput.security_protocol=PLAINTEXT.compression_type=snappy",
+    "run_time_seconds": 89
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.compression_test.CompressionTest.test_compressed_topic.compression_types=.snappy.gzip.lz4.none.new_consumer=True",
+    "run_time_seconds": 111
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_broker_rolling_bounce",
+    "run_time_seconds": 185
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_consumer_throughput.interbroker_security_protocol=PLAINTEXT.security_protocol=SSL",
+    "run_time_seconds": 149
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_group_consumption",
+    "run_time_seconds": 69
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=False.security_protocol=PLAINTEXT.new_consumer=True",
+    "run_time_seconds": 223
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=hard_bounce.broker_type=leader",
+    "run_time_seconds": 241
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=snappy.acks=1.message_size=100",
+    "run_time_seconds": 69
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.connect.connect_rest_test.ConnectRestApiTest.test_rest_api",
+    "run_time_seconds": 50
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_and_consumer.interbroker_security_protocol=PLAINTEXT.security_protocol=SSL",
+    "run_time_seconds": 132
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=snappy.acks=1.message_size=100000",
+    "run_time_seconds": 69
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.core.simple_consumer_shell_test.SimpleConsumerShellTest.test_simple_consumer_shell",
+    "run_time_seconds": 31
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=clean_shutdown.broker_type=leader",
+    "run_time_seconds": 177
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=snappy.acks=1.message_size=10000",
+    "run_time_seconds": 73
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=True.security_protocol=SSL.new_consumer=True",
+    "run_time_seconds": 154
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.core.consumer_group_command_test.ConsumerGroupCommandTest.test_describe_consumer_group.security_protocol=SSL",
+    "run_time_seconds": 36
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.client.consumer_test.AssignmentValidationTest.test_valid_assignment.assignment_strategy=org.apache.kafka.clients.consumer.RoundRobinAssignor",
+    "run_time_seconds": 64
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=none.acks=1.message_size=100",
+    "run_time_seconds": 74
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_one.client_protocol=SASL_PLAINTEXT",
+    "run_time_seconds": 278
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_test.ConnectStandaloneFileTest.test_file_source_and_sink.security_protocol=PLAINTEXT",
+    "run_time_seconds": 62
+  },
+  {
+    "nodes": 9,
+    "name": "kafkatest.tests.core.zookeeper_security_upgrade_test.ZooKeeperSecurityUpgradeTest.test_zk_security_upgrade.security_protocol=SASL_PLAINTEXT",
+    "run_time_seconds": 283
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.tools.log4j_appender_test.Log4jAppenderTest.test_log4j_appender.security_protocol=SASL_PLAINTEXT",
+    "run_time_seconds": 52
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=clean_shutdown.broker_type=controller",
+    "run_time_seconds": 128
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=clean_bounce.broker_type=leader",
+    "run_time_seconds": 163
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_performance_services.PerformanceServiceTest.test_version.version=trunk.new_consumer=False",
+    "run_time_seconds": 62
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=snappy.acks=1.message_size=100000",
+    "run_time_seconds": 78
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=snappy.acks=1.message_size=1000",
+    "run_time_seconds": 84
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.num_producers=3.acks=1",
+    "run_time_seconds": 84
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=clean_bounce.broker_type=controller",
+    "run_time_seconds": 215
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=False.security_protocol=SSL.new_consumer=True",
+    "run_time_seconds": 231
+  },
+  {
+    "nodes": 9,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_simple_end_to_end.security_protocol=SASL_PLAINTEXT.new_consumer=True",
+    "run_time_seconds": 152
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=0.9.0.1.compression_types=.snappy.new_consumer=True",
+    "run_time_seconds": 150
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SSL.client_protocol=SSL",
+    "run_time_seconds": 269
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=None.compression_types=.none",
+    "run_time_seconds": 143
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_broker_failure.clean_shutdown=True.enable_autocommit=True",
+    "run_time_seconds": 64
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.sanity_checks.test_console_consumer.ConsoleConsumerTest.test_lifecycle.security_protocol=PLAINTEXT.new_consumer=False",
+    "run_time_seconds": 31
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_console_consumer.ConsoleConsumerTest.test_lifecycle.security_protocol=SASL_SSL",
+    "run_time_seconds": 48
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_test.ConnectStandaloneFileTest.test_file_source_and_sink.converter=org.apache.kafka.connect.json.JsonConverter.schemas=False",
+    "run_time_seconds": 62
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=True.offsets_storage=kafka.new_consumer=False",
+    "run_time_seconds": 154
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=SASL_PLAINTEXT.compression_type=snappy",
+    "run_time_seconds": 140
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_distributed_test.ConnectDistributedTest.test_pause_and_resume_sink",
+    "run_time_seconds": 77
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=SASL_SSL.compression_type=none",
+    "run_time_seconds": 152
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=0.9.0.1.compression_types=.lz4.new_consumer=True",
+    "run_time_seconds": 150
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_performance_services.PerformanceServiceTest.test_version.version=trunk.new_consumer=True",
+    "run_time_seconds": 57
+  },
+  {
+    "nodes": 3,
+    "name": "kafkatest.sanity_checks.test_verifiable_producer.TestVerifiableProducer.test_simple_run.producer_version=0.9.0.1",
+    "run_time_seconds": 29
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.acks=-1",
+    "run_time_seconds": 87
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_failure.clean_shutdown=True.enable_autocommit=False",
+    "run_time_seconds": 74
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=snappy.acks=1.message_size=10",
+    "run_time_seconds": 88
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_broker_failure.clean_shutdown=False.enable_autocommit=True",
+    "run_time_seconds": 68
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_and_consumer.security_protocol=SSL.compression_type=snappy",
+    "run_time_seconds": 99
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=hard_shutdown.broker_type=leader",
+    "run_time_seconds": 135
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_bounce.clean_shutdown=False.bounce_mode=rolling",
+    "run_time_seconds": 221
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_consumer_throughput.security_protocol=PLAINTEXT.new_consumer=False",
+    "run_time_seconds": 118
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.tools.log4j_appender_test.Log4jAppenderTest.test_log4j_appender.security_protocol=PLAINTEXT",
+    "run_time_seconds": 33
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.timestamp_type=CreateTime.new_consumer=True.producer_version=trunk.compression_types=.snappy.consumer_version=0.9.0.1",
+    "run_time_seconds": 106
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=PLAINTEXT.failure_mode=hard_bounce.broker_type=leader",
+    "run_time_seconds": 200
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=SSL.compression_type=snappy",
+    "run_time_seconds": 133
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=none.acks=1.message_size=100000",
+    "run_time_seconds": 78
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_PLAINTEXT.failure_mode=clean_shutdown.broker_type=leader",
+    "run_time_seconds": 151
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_long_term_producer_throughput.security_protocol=PLAINTEXT.compression_type=none",
+    "run_time_seconds": 102
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.tools.log4j_appender_test.Log4jAppenderTest.test_log4j_appender.security_protocol=SSL",
+    "run_time_seconds": 38
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_consumer_throughput.security_protocol=SSL.compression_type=none",
+    "run_time_seconds": 155
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.failure_mode=clean_bounce.broker_type=leader",
+    "run_time_seconds": 213
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.sanity_checks.test_console_consumer.ConsoleConsumerTest.test_lifecycle.security_protocol=SSL",
+    "run_time_seconds": 34
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.client.consumer_rolling_upgrade_test.ConsumerRollingUpgradeTest.rolling_update_test",
+    "run_time_seconds": 55
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.client.consumer_test.AssignmentValidationTest.test_valid_assignment.assignment_strategy=org.apache.kafka.clients.consumer.RangeAssignor",
+    "run_time_seconds": 64
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=snappy.acks=1.message_size=10000",
+    "run_time_seconds": 81
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_test.ConnectStandaloneFileTest.test_file_source_and_sink.converter=org.apache.kafka.connect.json.JsonConverter.schemas=True",
+    "run_time_seconds": 62
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_and_consumer.security_protocol=PLAINTEXT.compression_type=snappy",
+    "run_time_seconds": 90
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_PLAINTEXT.failure_mode=clean_bounce.broker_type=leader",
+    "run_time_seconds": 203
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.acks=1",
+    "run_time_seconds": 77
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.tests.core.get_offset_shell_test.GetOffsetShellTest.test_get_offset_shell",
+    "run_time_seconds": 35
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=none.acks=1.message_size=100",
+    "run_time_seconds": 87
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_console_consumer.ConsoleConsumerTest.test_lifecycle.security_protocol=SASL_PLAINTEXT",
+    "run_time_seconds": 48
+  },
+  {
+    "nodes": 8,
+    "name": "kafkatest.tests.core.zookeeper_security_upgrade_test.ZooKeeperSecurityUpgradeTest.test_zk_security_upgrade.security_protocol=SSL",
+    "run_time_seconds": 267
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.client.quota_test.QuotaTest.test_quota.consumer_num=1.producer_num=1.producer_id=default_id.consumer_id=default_id",
+    "run_time_seconds": 363
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_sasl_mechanism_phase_two.new_sasl_mechanism=PLAIN",
+    "run_time_seconds": 306
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_performance_services.PerformanceServiceTest.test_version.version=0.9.0.1.new_consumer=True",
+    "run_time_seconds": 56
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.client.quota_test.QuotaTest.test_quota.consumer_num=2.producer_num=1.producer_id=overridden_id.consumer_id=overridden_id",
+    "run_time_seconds": 345
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.8.2.2.to_message_format_version=None.compression_types=.snappy",
+    "run_time_seconds": 131
+  },
+  {
+    "nodes": 4,
+    "name": "kafkatest.sanity_checks.test_console_consumer.ConsoleConsumerTest.test_lifecycle.security_protocol=PLAINTEXT",
+    "run_time_seconds": 31
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.8.2.2.to_message_format_version=None.compression_types=.none",
+    "run_time_seconds": 131
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_long_term_producer_throughput.security_protocol=SSL.compression_type=none",
+    "run_time_seconds": 123
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.timestamp_type=None.new_consumer=True.producer_version=0.9.0.1.compression_types=.snappy.consumer_version=trunk",
+    "run_time_seconds": 103
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.consumer_version=trunk.producer_version=0.9.0.1.compression_types=.none.timestamp_type=None",
+    "run_time_seconds": 103
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=SSL.compression_type=snappy.acks=1.message_size=100",
+    "run_time_seconds": 79
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SSL.client_protocol=SASL_PLAINTEXT",
+    "run_time_seconds": 310
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.streams.streams_smoke_test.StreamsSmokeTest.test_streams",
+    "run_time_seconds": 174
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.connect.connect_distributed_test.ConnectDistributedTest.test_bounce.clean=False",
+    "run_time_seconds": 406
+  },
+  {
+    "nodes": 9,
+    "name": "kafkatest.tests.core.mirror_maker_test.TestMirrorMakerService.test_bounce.clean_shutdown=True.security_protocol=SASL_SSL.new_consumer=True",
+    "run_time_seconds": 180
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SASL_SSL.client_sasl_mechanism=PLAIN.failure_mode=hard_bounce.broker_type=leader.interbroker_sasl_mechanism=GSSAPI",
+    "run_time_seconds": 238
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SASL_SSL.client_protocol=SSL",
+    "run_time_seconds": 323
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_failure.clean_shutdown=False.enable_autocommit=True",
+    "run_time_seconds": 79
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.client.message_format_change_test.MessageFormatChangeTest.test_compatibility.consumer_version=trunk.producer_version=trunk",
+    "run_time_seconds": 213
+  },
+  {
+    "nodes": 9,
+    "name": "kafkatest.tests.core.zookeeper_security_upgrade_test.ZooKeeperSecurityUpgradeTest.test_zk_security_upgrade.security_protocol=SASL_SSL",
+    "run_time_seconds": 289
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=PLAINTEXT.compression_type=snappy",
+    "run_time_seconds": 116
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.consumer_version=0.8.2.2.producer_version=0.8.2.2.compression_types=.none.timestamp_type=None",
+    "run_time_seconds": 103
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SSL.client_protocol=SASL_SSL",
+    "run_time_seconds": 315
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_sasl_mechanism_phase_one.new_client_sasl_mechanism=PLAIN",
+    "run_time_seconds": 294
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_end_to_end_latency.security_protocol=SSL.compression_type=none",
+    "run_time_seconds": 135
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.consumer_version=trunk.producer_version=trunk.compression_types=.none.timestamp_type=LogAppendTime",
+    "run_time_seconds": 104
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.sanity_checks.test_performance_services.PerformanceServiceTest.test_version.version=0.8.2.2",
+    "run_time_seconds": 59
+  },
+  {
+    "nodes": 5,
+    "name": "kafkatest.tests.tools.log4j_appender_test.Log4jAppenderTest.test_log4j_appender.security_protocol=SASL_SSL",
+    "run_time_seconds": 54
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SSL.failure_mode=clean_shutdown.broker_type=leader",
+    "run_time_seconds": 140
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.replication_test.ReplicationTest.test_replication_with_broker_failure.security_protocol=SSL.failure_mode=hard_bounce.broker_type=leader",
+    "run_time_seconds": 213
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.compatibility_test_new_broker_test.ClientCompatibilityTestNewBroker.test_compatibility.timestamp_type=LogAppendTime.new_consumer=True.producer_version=0.9.0.1.compression_types=.snappy.consumer_version=0.9.0.1",
+    "run_time_seconds": 104
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.tests.core.upgrade_test.TestUpgrade.test_upgrade.from_kafka_version=0.9.0.1.to_message_format_version=None.compression_types=.snappy.new_consumer=True",
+    "run_time_seconds": 152
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.core.security_rolling_upgrade_test.TestSecurityRollingUpgrade.test_rolling_upgrade_phase_two.broker_protocol=SASL_PLAINTEXT.client_protocol=SSL",
+    "run_time_seconds": 322
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_producer_throughput.topic=topic-replication-factor-three.security_protocol=PLAINTEXT.compression_type=none.acks=1.message_size=100000",
+    "run_time_seconds": 68
+  },
+  {
+    "nodes": 3,
+    "name": "kafkatest.sanity_checks.test_verifiable_producer.TestVerifiableProducer.test_simple_run.producer_version=trunk",
+    "run_time_seconds": 29
+  },
+  {
+    "nodes": 6,
+    "name": "kafkatest.benchmarks.core.benchmark_test.Benchmark.test_long_term_producer_throughput.interbroker_security_protocol=PLAINTEXT.security_protocol=SSL",
+    "run_time_seconds": 119
+  },
+  {
+    "nodes": 7,
+    "name": "kafkatest.tests.client.consumer_test.OffsetValidationTest.test_consumer_bounce.clean_shutdown=True.bounce_mode=rolling",
+    "run_time_seconds": 163
+  },
+  {
+    "nodes": 2,
+    "name": "kafkatest.sanity_checks.test_kafka_version.KafkaVersionTest.test_0_8_2",
+    "run_time_seconds": 22
+  }
+]

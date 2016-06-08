@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://fb.me/react-0.13.1.min.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.13.1.js"></script>
+  </head>
+  <link rel="stylesheet" href="report.css" type="text/css">
+  <body>
+    <div id="heading"></div>
+    <div id="summary_panel"></div>
+    <div id="color_key_panel"></div>
+    <div id="test_panel"></div>
+    <script type="text/jsx">
+      /* This small block makes it possible to use React dev tools in the Chrome browser */
+      if (typeof window !== 'undefined') {
+        window.React = React;
+      }
+
+      var Heading = React.createClass({
+        render: function() {
+          return (
+            <div>
+              <h1>
+                System Test Report
+              </h1>
+              <p>Test Session: {this.props.heading.session}</p>
+            </div>
+          );
+        }
+      });
+      
+      var SummaryRow = React.createClass({
+        render: function() {
+          return (
+            <tr>
+              <td colSpan='5' align='center'>{this.props.summary_prop.tests}</td>
+              <td colSpan='5' align='center'>{this.props.summary_prop.passes}</td>
+              <td colSpan='5' align='center'>{this.props.summary_prop.failures}</td>
+              <td colSpan='5' align='center'>{this.props.summary_prop.ignored}</td>
+              <td colSpan='5' align='center'>{this.props.summary_prop.run_time}</td>
+            </tr>
+          );
+        }
+      })
+      
+      var SummaryTable = React.createClass({
+        render: function() {
+          return (
+            <table id="summary_report_table">
+              <thead>
+                <tr id="summary_header_row">
+                  <th colSpan='5' align='center'>Tests</th>
+                  <th colSpan='5' align='center'>Passes</th>
+                  <th colSpan='5' align='center'>Failures</th>
+                  <th colSpan='5' align='center'>Ignored</th>
+                  <th colSpan='5' align='center'>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {this.props.summary_props.map(function(summary_prop){
+                  return (
+                    <SummaryRow summary_prop={summary_prop} />
+                  );
+                }, this)}
+              </tbody>
+            </table>
+          );
+        }
+      });
+      
+      var TestRow = React.createClass({
+        render: function() {
+          var className = this.props.test.test_result;
+          var detailCol;
+          if (className !== "ignore") {
+            detailCol = <td colSpan='5' align='center'><pre><a href={this.props.test.test_log}>Detail</a></pre></td>
+          } else {
+            detailCol = <td colSpan='5' align='center'></td>
+          }
+
+          return (
+            <tr className={className}>
+              <td colSpan='5' align='center'><pre>{this.props.test.test_name}</pre></td>
+              <td colSpan='5' align='center'><pre>{this.props.test.description}</pre></td>
+              <td colSpan='5' align='center'><pre>{this.props.test.run_time}</pre></td>
+              <td colSpan='5' align='center'><pre>{this.props.test.data}</pre></td>
+              {detailCol}
+            </tr>
+          );
+        }
+      });
+
+
+
+      var TestTable = React.createClass({
+        render: function() {
+          return (
+            <table id="report_table">
+              <thead>
+                <tr id="header_row">
+                  <th colSpan='5' align='center'>Test</th>
+                  <th colSpan='5' align='center'>Description</th>
+                  <th colSpan='5' align='center'>Time</th>
+                  <th colSpan='5' align='center'>Data</th>
+                  <th colSpan='5' align='center'>Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+                {this.props.tests.map(function(test) {
+                  return (
+                    <TestRow test={test} /> 
+                  );
+                }, this)}
+              </tbody>
+            </table>
+          );
+        }
+      });
+
+      /* A key which shows how colors map to different test statuses. E.g. red -> fail, green -> pass, etc */
+      var ColorKeyTable = React.createClass({
+        render: function() {
+          return (
+            <table id="color_key_table">
+              <tbody>
+                {this.props.test_status_names.map(function(status_name) {
+                  return (
+                    <th colSpan='5' align='center' className={status_name}>{status_name}</th>
+                  );
+                }, this)}
+              </tbody>
+            </table>
+          );
+        }
+      });
+
+
+      ColorKeyPanel = React.createClass({
+        render: function() {
+          return (
+            <div>
+              <h3>Color Key</h3>
+              <ColorKeyTable test_status_names={this.props.test_status_names}/>
+            </div>
+          );
+
+        }
+      });
+
+      SummaryPanel = React.createClass({
+        render: function() {
+          return (
+            <div>
+              <h2>Summary</h2>
+              <SummaryTable summary_props={this.props.summary_props}/>
+            </div>
+          );
+        }
+      });
+
+      TestPanel = React.createClass({
+        render: function() {
+          return (
+            <div>
+              <h2>Results</h2>
+              <TestTable tests={this.props.tests}/>
+            </div>
+          );
+        }
+      });
+
+      SUMMARY=[{
+        "tests": 47,
+        "passes": 46,
+        "failures": 1,
+        "ignored": 0,
+        "run_time": '119 minutes 57.855 seconds'
+      }];
+      
+      HEADING={
+        "session": '2016-04-16--002'
+      };
+
+      COLOR_KEYS=['pass','fail','ignore'];
+
+      TESTS=[{"description": "", "test_name": "Module: muckrake.tests.schema_registry_benchmark_test\nClass:  SchemaRegistryBenchmark\nMethod: test", "run_time": "2 minutes 27.621 seconds", "test_log": "SchemaRegistryBenchmark/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.mini_test\nClass:  MiniTest\nMethod: test", "run_time": "18.759 seconds", "test_log": "MiniTest/test", "test_result": "pass", "data": ""},{"description": " Sanity check to ensure that various core services all run.\n    ", "test_name": "Module: muckrake.tests.everything_runs_test\nClass:  EverythingRunsTest\nMethod: test", "run_time": "44.667 seconds", "test_log": "EverythingRunsTest/test", "test_result": "pass", "data": ""},{"description": "\n        Test that hard bouncing the Kafka Connect workers for an HDFS sink does not affect exactly once delivery.\n        ", "test_name": "Module: muckrake.tests.connect_hdfs_distributed_test\nClass:  ConnectHdfsDistributedTest\nMethod: test_bounce", "run_time": "20 minutes 14.918 seconds", "test_log": "ConnectHdfsDistributedTest/test_bounce", "test_result": "pass", "data": ""},{"description": "Simple Elasticsearch sanity test. This test makes sure that the Elasticsearch can be connected\n    from other hosts and it can serve requests from other hosts.\n    ", "test_name": "Module: muckrake.tests.elasticsearch_test\nClass:  ElasticsearchTest\nMethod: test_elasticsearch", "run_time": "24.139 seconds", "test_log": "ElasticsearchTest/test_elasticsearch", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.sr_kafka_broker_failover_test\nClass:  KafkaBrokerCleanBounce\nMethod: test", "run_time": "2 minutes 47.596 seconds", "test_log": "KafkaBrokerCleanBounce/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.sr_kafka_broker_failover_test\nClass:  KafkaBrokerHardBounce\nMethod: test", "run_time": "3 minutes 9.812 seconds", "test_log": "KafkaBrokerHardBounce/test", "test_result": "pass", "data": ""},{"description": "\n    Begin registering schemas; part way through, cleanly kill the leader node for \"_schemas\" topic.\n    ", "test_name": "Module: muckrake.tests.sr_kafka_broker_failover_test\nClass:  KafkaLeaderCleanFailover\nMethod: test", "run_time": "1 minute 34.458 seconds", "test_log": "KafkaLeaderCleanFailover/test", "test_result": "pass", "data": ""},{"description": "\n    Begin registering schemas; part way through, kill -9 the leader node for \"_schemas\" topic\n    ", "test_name": "Module: muckrake.tests.sr_kafka_broker_failover_test\nClass:  KafkaLeaderHardFailover\nMethod: test", "run_time": "1 minute 42.710 seconds", "test_log": "KafkaLeaderHardFailover/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_hdfs_test\nClass:  ConnectHiveTest\nMethod: test_hive", "run_time": "3 minutes 46.716 seconds", "test_log": "ConnectHiveTest/test_hive", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_hdfs_test\nClass:  ConnectHdfsTest\nMethod: test_avro", "run_time": "3 minutes 43.031 seconds", "test_log": "ConnectHdfsTest/test_avro", "test_result": "pass", "data": ""},{"description": "\n        The source generates messages with a field that cycles values [1, 2, 3], and the sink partitions the output data\n        across multiple directories using this field. File rotation happens every 3 messages, so for each flush interval\n        each partition directory should see 1 file containing 1 entry.\n        ", "test_name": "Module: muckrake.tests.connect_hdfs_test\nClass:  ConnectHdfsTest\nMethod: test_field_partitioning", "run_time": "4 minutes 32.525 seconds", "test_log": "ConnectHdfsTest/test_field_partitioning", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_hdfs_test\nClass:  ConnectHdfsTest\nMethod: test_parquet", "run_time": "3 minutes 29.922 seconds", "test_log": "ConnectHdfsTest/test_parquet", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_hdfs_test\nClass:  ConnectHdfsTest\nMethod: test_schema_migration_backward_compatibility", "run_time": "3 minutes 38.903 seconds", "test_log": "ConnectHdfsTest/test_schema_migration_backward_compatibility", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_hdfs_test\nClass:  ConnectHdfsTest\nMethod: test_schema_migration_no_compatibility", "run_time": "4 minutes 19.880 seconds", "test_log": "ConnectHdfsTest/test_schema_migration_no_compatibility", "test_result": "pass", "data": ""},{"description": "\n        The source generates messages at a fixed rate and uses time based partitioning using\n        year/month/day/hour/minute/second directory structure. Conservative assertions are made based on expected\n        running time and other safe assumptions like contiguous offsets and valid Avro data are checked.\n        ", "test_name": "Module: muckrake.tests.connect_hdfs_test\nClass:  ConnectHdfsTest\nMethod: test_time_partitioning", "run_time": "4 minutes 18.757 seconds", "test_log": "ConnectHdfsTest/test_time_partitioning", "test_result": "pass", "data": ""},{"description": "\n    Simple mysql sanity test. This test makes sure that the mysql service\n    is successfully started, can be connected from other hosts, the result\n    returned by a select query matches the records inserted into the table.\n    ", "test_name": "Module: muckrake.tests.mysql_test\nClass:  MysqlTest\nMethod: test", "run_time": "14.039 seconds", "test_log": "MysqlTest/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.native_vs_rest_performance_test\nClass:  NativeVsRestProducerPerformance\nMethod: test", "run_time": "54.333 seconds", "test_log": "NativeVsRestProducerPerformance/test", "test_result": "pass", "data": "{\n  \"producer\": {\n    \"mb_per_sec\": 12.94,\n    \"records_per_sec\": 135648.399349\n  },\n  \"rest_producer\": {\n    \"mb_per_sec\": 11.47,\n    \"records_per_sec\": 120253.998797\n  }\n}"},{"description": "", "test_name": "Module: muckrake.tests.native_vs_rest_performance_test\nClass:  NativeVsRestConsumerPerformance\nMethod: test", "run_time": "1 minute 5.880 seconds", "test_log": "NativeVsRestConsumerPerformance/test", "test_result": "pass", "data": "{\n  \"consumer\": {\n    \"mb_per_sec\": 221.7847,\n    \"records_per_sec\": 2325581.3953\n  },\n  \"rest_consumer\": {\n    \"mb_per_sec\": 13.01,\n    \"records_per_sec\": 133716.136789\n  }\n}"},{"description": "\n    Begin registering schemas; part way through, hard kill the master (kill -9)\n    ", "test_name": "Module: muckrake.tests.sr_master_failover_test\nClass:  MasterHardFailover\nMethod: test", "run_time": "1 minute 34.751 seconds", "test_log": "MasterHardFailover/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.sr_master_failover_test\nClass:  HardBounce\nMethod: test", "run_time": "2 minutes 19.449 seconds", "test_log": "HardBounce/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.sr_master_failover_test\nClass:  CleanBounce\nMethod: test", "run_time": "2 minutes 45.089 seconds", "test_log": "CleanBounce/test", "test_result": "pass", "data": ""},{"description": "\n    Begin registering schemas; part way through, cleanly kill the master.\n    ", "test_name": "Module: muckrake.tests.sr_master_failover_test\nClass:  MasterCleanFailover\nMethod: test", "run_time": "1 minute 5.130 seconds", "test_log": "MasterCleanFailover/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.hadoop_test\nClass:  HDPSecureSetupTest\nMethod: test", "run_time": "2 minutes 19.278 seconds", "test_log": "HDPSecureSetupTest/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.hadoop_test\nClass:  HDPSetupTest\nMethod: test", "run_time": "2 minutes 2.003 seconds", "test_log": "HDPSetupTest/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.hadoop_test\nClass:  HadoopV2SetupTest\nMethod: test", "run_time": "2 minutes 3.108 seconds", "test_log": "HadoopV2SetupTest/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.hadoop_test\nClass:  HadoopV2SecureSetupTest\nMethod: test", "run_time": "2 minutes 21.951 seconds", "test_log": "HadoopV2SecureSetupTest/test", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.hadoop_test\nClass:  HadoopV1SetupTest\nMethod: test", "run_time": "1 minute 33.883 seconds", "test_log": "HadoopV1SetupTest/test", "test_result": "pass", "data": ""},{"description": "\n    Begin registering schemas; part way through, cleanly kill the master.\n    ", "test_name": "Module: muckrake.tests.test_reassign_partitions\nClass:  TestReassignPartitions\nMethod: test", "run_time": "1 minute 22.623 seconds", "test_log": "TestReassignPartitions/test", "test_result": "pass", "data": ""},{"description": "\n        Runs Kafka Connect in distributed mode with a JDBC connector pulling data from multiple tables using multiple\n        tasks. These tables are created dynamically, exercising the monitoring functionality of the connector, validating\n        that tasks are added dynamically as needed to process these tables. Once it is running, performs rolling bounces\n        to validate that data continues to be delivered as work is redistributed among workers and that, depending on the\n        type of bounce, data is delivered either exactly once or at least once.\n        ", "test_name": "Module: muckrake.tests.connect_mysql_distributed_test\nClass:  ConnectDistributedMysqlTest\nMethod: test_bounce\nArguments:\n{\n  \"clean\": false\n}", "run_time": "6 minutes 14.733 seconds", "test_log": "ConnectDistributedMysqlTest/test_bounce/clean=False", "test_result": "pass", "data": ""},{"description": "\n        Runs Kafka Connect in distributed mode with a JDBC connector pulling data from multiple tables using multiple\n        tasks. These tables are created dynamically, exercising the monitoring functionality of the connector, validating\n        that tasks are added dynamically as needed to process these tables. Once it is running, performs rolling bounces\n        to validate that data continues to be delivered as work is redistributed among workers and that, depending on the\n        type of bounce, data is delivered either exactly once or at least once.\n        ", "test_name": "Module: muckrake.tests.connect_mysql_distributed_test\nClass:  ConnectDistributedMysqlTest\nMethod: test_bounce\nArguments:\n{\n  \"clean\": true\n}", "run_time": "3 minutes 59.733 seconds", "test_log": "ConnectDistributedMysqlTest/test_bounce/clean=True", "test_result": "pass", "data": ""},{"description": "\n    7 machines are required at minimum: Zookeeper 1, Kafka 1, Hadoop 2,\n    SchemaRegistry 1,  KafkaRest 1,\n    CamusPerformance 1\n    ", "test_name": "Module: muckrake.tests.camus_test\nClass:  CamusHDPTest\nMethod: test", "run_time": "2 minutes 43.789 seconds", "test_log": "CamusHDPTest/test", "test_result": "pass", "data": ""},{"description": "\n    7 machines are required at minimum: Zookeeper 1, Kafka 1, Hadoop 2,\n    SchemaRegistry 1,  KafkaRest 1,\n    CamusPerformance 1\n    ", "test_name": "Module: muckrake.tests.camus_test\nClass:  CamusHadoopV1Test\nMethod: test", "run_time": "2 minutes 15.260 seconds", "test_log": "CamusHadoopV1Test/test", "test_result": "pass", "data": ""},{"description": "\n    7 machines are required at minimum: Zookeeper 1, Kafka 1, Hadoop 2,\n    SchemaRegistry 1,  KafkaRest 1,\n    CamusPerformance 1\n    ", "test_name": "Module: muckrake.tests.camus_test\nClass:  CamusHadoopV2Test\nMethod: test", "run_time": "2 minutes 42.625 seconds", "test_log": "CamusHadoopV2Test/test", "test_result": "pass", "data": ""},{"description": " a basic check that our service is calculating something and responding\n        ", "test_name": "Module: muckrake.tests.control_center_test\nClass:  ControlCenterTest\nMethod: test_control_center", "run_time": "2 minutes 45.691 seconds", "test_log": "ControlCenterTest/test_control_center", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_mysql_test\nClass:  ConnectMysqlTest\nMethod: test_convert_types", "run_time": "1 minute 8.222 seconds", "test_log": "ConnectMysqlTest/test_convert_types", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_mysql_test\nClass:  ConnectMysqlTest\nMethod: test_query_modes\nArguments:\n{\n  \"incremental_mode\": \"timestamp+incrementing\",\n  \"query_mode\": \"table\"\n}", "run_time": "1 minute 45.284 seconds", "test_log": "ConnectMysqlTest/test_query_modes/query_mode=table.incremental_mode=timestamp.incrementing", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_mysql_test\nClass:  ConnectMysqlTest\nMethod: test_query_modes\nArguments:\n{\n  \"incremental_mode\": \"timestamp\",\n  \"query_mode\": \"table\"\n}", "run_time": "1 minute 43.994 seconds", "test_log": "ConnectMysqlTest/test_query_modes/query_mode=table.incremental_mode=timestamp", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_mysql_test\nClass:  ConnectMysqlTest\nMethod: test_query_modes\nArguments:\n{\n  \"incremental_mode\": \"incrementing\",\n  \"query_mode\": \"table\"\n}", "run_time": "1 minute 44.942 seconds", "test_log": "ConnectMysqlTest/test_query_modes/query_mode=table.incremental_mode=incrementing", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_mysql_test\nClass:  ConnectMysqlTest\nMethod: test_query_modes\nArguments:\n{\n  \"incremental_mode\": \"timestamp+incrementing\",\n  \"query_mode\": \"query\"\n}", "run_time": "1 minute 45.361 seconds", "test_log": "ConnectMysqlTest/test_query_modes/query_mode=query.incremental_mode=timestamp.incrementing", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_mysql_test\nClass:  ConnectMysqlTest\nMethod: test_query_modes\nArguments:\n{\n  \"incremental_mode\": \"timestamp\",\n  \"query_mode\": \"query\"\n}", "run_time": "1 minute 44.030 seconds", "test_log": "ConnectMysqlTest/test_query_modes/query_mode=query.incremental_mode=timestamp", "test_result": "pass", "data": ""},{"description": "", "test_name": "Module: muckrake.tests.connect_mysql_test\nClass:  ConnectMysqlTest\nMethod: test_query_modes\nArguments:\n{\n  \"incremental_mode\": \"incrementing\",\n  \"query_mode\": \"query\"\n}", "run_time": "1 minute 45.023 seconds", "test_log": "ConnectMysqlTest/test_query_modes/query_mode=query.incremental_mode=incrementing", "test_result": "pass", "data": ""},{"description": " a basic check that our service is calculating something and responding\n        ", "test_name": "Module: muckrake.tests.control_center_demo_test\nClass:  ControlCenterDemoTest\nMethod: test_api_returns", "run_time": "57.570 seconds", "test_log": "ControlCenterDemoTest/test_api_returns", "test_result": "fail", "data": ""},{"description": " a basic check that our service serving the html/js\n        ", "test_name": "Module: muckrake.tests.control_center_demo_test\nClass:  ControlCenterDemoTest\nMethod: test_hit_frontend", "run_time": "40.991 seconds", "test_log": "ControlCenterDemoTest/test_hit_frontend", "test_result": "pass", "data": ""},{"description": " a basic check that we write any messages to our test and audit topics\n        ", "test_name": "Module: muckrake.tests.control_center_demo_test\nClass:  ControlCenterDemoTest\nMethod: test_messages_are_written", "run_time": "45.090 seconds", "test_log": "ControlCenterDemoTest/test_messages_are_written", "test_result": "pass", "data": ""},{"description": "\n        Creates Kafka topics and specifies compatibility levels, then creates MySQL tables, inserts data, alters the\n        tables, and inserts more data to validate that the data is successfully collected from the tables after being\n        altered, use a new schema, are successfully registered with the schema registry, and data is correctly\n        produced into Kafka.\n        ", "test_name": "Module: muckrake.tests.connect_mysql_schema_test\nClass:  ConnectMysqlSchemaTest\nMethod: test_schema_migration", "run_time": "1 minute 20.883 seconds", "test_log": "ConnectMysqlSchemaTest/test_schema_migration", "test_result": "pass", "data": ""},{"description": " Sanity check to ensure that support metrics are collected\n    ", "test_name": "Module: muckrake.tests.proactive_support_topic_test\nClass:  ProactiveSupportTopicTest\nMethod: test", "run_time": "58.597 seconds", "test_log": "ProactiveSupportTopicTest/test", "test_result": "pass", "data": ""},];
+
+      React.render(<Heading heading={HEADING}/>, document.getElementById('heading'));
+      React.render(<ColorKeyPanel test_status_names={COLOR_KEYS}/>, document.getElementById('color_key_panel'));
+      React.render(<SummaryPanel summary_props={SUMMARY}/>, document.getElementById('summary_panel'));
+      React.render(<TestPanel tests={TESTS}/>, document.getElementById('test_panel'));
+    </script>
+  </body>
+</html>
